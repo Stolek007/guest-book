@@ -1,0 +1,63 @@
+html {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 1%;
+    height: 30px;
+    padding: 1%;
+    font-size: 1.2em;
+    font-family: cursive;
+    font-weight: bold;
+    border-radius: 50px;
+    outline: none;
+}
+
+input:hover {
+    border: 1px solid red;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 3%;
+    border: 1px solid black;
+    border-radius: 50px;
+    resize: none;
+    padding: 1%;
+    font-size: 1.2em;
+    font-family: cursive;
+    font-weight: bold;
+    outline: none;
+}
+
+textarea:hover {
+    border: 1px solid red;
+}
+
+button {
+    margin-top: 5%;
+    width: 20%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.3em;
+    outline: none;
+}
+
+button:hover {
+    transition: 1s;
+    background: black;
+    color: white;
+}
+
+.warning {
+    color: red;
+    font-family: cursive;
+    font-size: 1.4em;
+    font-weight: bold;
+}

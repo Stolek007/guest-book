@@ -1,0 +1,35 @@
+html {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.comment-block {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 1%;
+    border-radius: 50px;
+    padding: 1%;
+}
+
+.comment-name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.comment-email {
+    font-family: cursive;
+}
+
+.comment-text {
+    font-size: 1.2em;
+    font-family: Arial;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 1s;
+    color: red;
+}
