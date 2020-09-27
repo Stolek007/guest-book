@@ -1,7 +1,7 @@
 <?php
 
 // Connecting to DataBase
-require '../db/connect.php';
+include '../db/connect.php';
 
 ?>
 <!doctype html>
@@ -46,18 +46,16 @@ if (!empty($errors)) {
         $v .= '<p class="warning">' . $errors[$i] . '</p>';
         echo $v;
     }
-    $mysql->close();
     exit();
 } else if (empty($errors)) {
     // Insert into `comments` all data
-    $mysql->query("INSERT INTO `comments` (`name`, `email`, `homepage`, `text`) VALUES ('$name', '$email', '$homepage_url', '$text')");
-    $mysql->close();
+    $mysql->prepare("INSERT INTO `comments` (`name`, `email`, `homepage`, `text`) VALUES ('$name', '$email', '$homepage_url', '$text')");
+    $mysql->execute();
     header('Location: ../index.php');
     exit();
 }
 
 // If something went wrong -> close mysql connection and exit the code
-$mysql->close();
 exit();
 ?>
 </body>

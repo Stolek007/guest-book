@@ -1,4 +1,4 @@
-<?php require 'db/connect.php'; // Connecting to DataBase ?>
+<?php include 'db/connect.php'; // Connecting to DataBase ?>
 <!doctype html>
 <html lang="ru">
 <head>

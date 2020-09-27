@@ -16,4 +16,7 @@ ENGINE=InnoDB
  * */
 
 // Connecting to DataBase
-$mysql = new mysqli('localhost', 'root', 'root', 'guest-book');
+//$mysql = new mysqli('localhost', 'root', 'root', 'guest-book');
+
+
+$mysql = new \PDO('mysql:host=localhost;dbname=database_name;charset=UTF8;', 'root', 'root');

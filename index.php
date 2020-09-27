@@ -1,3 +1,4 @@
+<?php include ('/db/connect.php'); ?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -12,10 +13,6 @@
 <body>
 <a href="add_comment.php">Добавить комментарий</a>
 <?php
-
-// Connecting to DataBase
-$mysql = new \PDO('mysql:host=localhost;dbname=guest-book', 'root', 'root');
-$mysql->exec('SET NAMES UTF8');
 
 $result = $mysql->prepare("SELECT * FROM `comments`");
 $result->execute();
